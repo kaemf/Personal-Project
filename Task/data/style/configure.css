@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Comfortaa:wght@500&family=Pacifico&family=Yanone+Kaffeesatz&display=swap');
+
+body{
+    background: rgb(199, 199, 199);
+}
+
+.second-title::before{
+    top: 150px;
+    left: 5%;
+    content: 'ТИЖНЕВИЙ РОЗКЛАД';
+    font-size: xx-large;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    position: absolute;
+    font-family: 'Caveat', cursive;
+}
+
+.title-for::before{
+    content: 'РОБОЧІ ДНІ';
+    font-weight: bold;
+    top: 50px;
+    left: 20px;
+    position: absolute;
+    font-size: 40px;
+    font-family: 'Comfortaa', cursive;
+}
+
+.last-text::before{
+    content: 'ВИХІДНІ ДНІ';
+    font-size: 40px;
+    top: 1625px;
+    left: 60px;
+    font-weight: bold;
+    color: black;
+    z-index: 2;
+    position: absolute;
+    font-family: 'Comfortaa', cursive;
+}
+
+.first-list{
+    position: absolute;
+}
+
+.second-list{
+    position: absolute;
+}
+
+.third-list{
+    position: absolute;
+}
+
+.fourth-list{
+    position: absolute;
+}
+
+.fiveth-list{
+    position: absolute;
+}
+
+.last-list{
+    position: absolute;
+    padding-left: 65px;
+}
+
+div.title-space{
+    top: -120px;
+    left: 0%;
+    width: 100%;
+    height: 35%;
+    position: absolute;
+    background: rgb(57, 57, 134);
+    z-index: 1;
+}
+
+div.first-space{
+    top: 250px;
+    left: 5%;
+    width: 50%;
+    height: 35%;
+    position: absolute;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0px 0px 0px 1px black;
+}
+
+div.second-space{
+    top: 500px;
+    left: 5%;
+    width: 50%;
+    height: 35%;
+    position: absolute;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0px 0px 0px 1px black;
+}
+
+div.third-space{
+    top: 750px;
+    left: 5%;
+    width: 50%;
+    height: 38%;
+    position: absolute;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0px 0px 0px 1px black;
+}
+
+div.fourth-space{
+    top: 1025px;
+    left: 5%;
+    width: 50%;
+    height: 38%;
+    position: absolute;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0px 0px 0px 1px black;
+}
+
+div.fiveth-space{
+    top: 1300px;
+    left: 5%;
+    width: 50%;
+    height: 38%;
+    position: absolute;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0px 0px 0px 1px black;
+}
+
+div.last-space{
+    top: 1725px;
+    left: 5%;
+    width: 50%;
+    height: 35%;
+    position: absolute;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0px 0px 0px 1px black;
+}
+
+div.main-space{
+    top: 100px;
+    left: 3%;
+    width: 94%;
+    height: 300%;
+    position: absolute;
+    background: white;
+    box-shadow: 0px 0px 1px 1px black;
+}
+
+ul{
+    z-index: 2;
+}
+
+ol{
+    z-index: 3;
+}
+
+.line-pred{
+    background: black;
+    position: absolute;
+    top: 54px;
+    left: 0px;
+    width: 7px;
+    height: 32px;
+}
+
+.line-last{
+    background: black;
+    position: absolute;
+    top: 1629px;
+    left: 40px;
+    width: 7px;
+    height: 31px;
+}
+
+div.navigation{
+    position: fixed;
+    width: 25%;
+    height: 40%;
+    top: 276px;
+    right: 80px;
+    border-radius: 10px;
+}
+
+.text-nav::before{
+    content: 'НАВІГАЦІЯ';
+    position: absolute;
+    top: -30px;
+    right: 180px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Comfortaa', cursive;
+}
+
+.line-nav{
+    background: black;
+    position: absolute;
+    top: -27px;
+    right: 330px;
+    width: 7px;
+    height: 19px;
+}
+
+a{
+    position: relative;
+    padding-left: 20px;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Pacifico', cursive;
+    color: rgb(57, 57, 134);
+}
+
+li{ font-size: 20px; }
+
+a:hover{
+    transition: all 0.3s ease-in-out;
+    color: rgb(114, 114, 252);
+}
+
+#first{ position: absolute; top: 230px;}
+#second{ position: absolute; top: 480px;}
+#third{ position: absolute; top: 730px;}
+#fourth{ position: absolute; top: 1000px;}
+#fiveth{ position: absolute; top: 1275px;}
+
+img.home{
+    position: absolute;
+    width: 20%;
+    top: 5px;
+    right: 151px;
+    z-index: 2;
+}
+
+img.end{
+    position: absolute;
+    width: 20%;
+    top: 5px;
+    right: 153px;
+    z-index: 2;
+    transform: rotate(180deg);
+}
+
+#end{ position: absolute; top: 4000px;}

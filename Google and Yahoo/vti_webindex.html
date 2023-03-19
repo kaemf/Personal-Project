@@ -1,0 +1,180 @@
+<html>
+<html lang='ru'>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="data/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="data/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="data/favicon-16x16.png">
+    <link rel="manifest" href="data/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="data/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Button_Animation</title>
+</head>
+
+<style>
+    body{
+        padding-top: 5px;
+        background-color: gray;
+    }
+
+    a{
+        text-decoration: none;
+    }
+    
+    div.message{
+        top: 5px;
+        transition: all 0.3s ease;
+        padding: 20px;
+        height: 40px;
+        background: blue;
+        color: white;
+        margin-bottom: 15px;
+        position: absolute;
+        width: 1000px;
+        left: 180px;
+        animation-duration: 1.3s;
+        animation-name: message;
+        opacity: 0.7;
+    }
+
+    div.message::before{
+        content: 'Yaroslav';
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    div.message::after{
+        margin-top: -10px;
+        content: '2022';
+        float: right;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    div.atent::after{
+        top: 45px;
+        position: absolute;
+        font-size: 13px;
+        content: 'Сайт оптимізований тільки під роздільню здатність дисплея 1366Х768, в інших випадках можуть бути проблеми з відображенням об`єктів на сайті.';
+    }
+
+    .exit-m{
+        margin-left: 15px;
+        margin-top: -10px;
+        color: white;
+        font-weight: bold;
+        float: right;
+        font-size: 22px;
+        line-height: 20px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .exit-m:hover{
+        transform: rotate(180deg);
+    }
+
+    div.title{
+        font-family: 'Comforter Brush', cursive;
+        font-size: 80px;
+        text-align: center;
+    }
+
+    @keyframes message {
+        from{
+            opacity: 0;
+            filter: blur(2px);
+        }
+
+        to{
+            opacity: 0.7;
+        }
+    }
+
+    div.title::before{
+        content: "Перехід до пошукової системи:";
+    }
+
+    div.first-link{
+        transition: all .3s ease;
+        background-color: white;
+        width: 60%;
+        position: absolute;
+        height: 20%;
+        top: 180px;
+        border-radius: 100px;
+        text-align: center;
+        left: 270px;
+        font-size: 100px;
+        font-family: 'Noto Sans', sans-serif;
+    }
+
+    div.first-link::before{
+        content: 'Google';
+        position: absolute;
+        top: -10px;
+        left: 250px;
+    }
+
+    div.second-link{
+        transition: all .3s ease;
+        background-color: white;
+        width: 60%;
+        position: absolute;
+        height: 20%;
+        top: 350px;
+        border-radius: 100px;
+        text-align: center;
+        left: 270px;
+        font-size: 100px;
+        font-family: 'Nunito Sans', sans-serif;
+    }
+
+    div.second-link::before{
+        left: 260px;
+        position: absolute;
+        top: -10px;
+        content: 'yahoo!';
+        font-family: 'Nunito Sans', sans-serif;
+    }
+
+    div.first-link:hover{
+        background: rgb(61, 61, 61);
+        color: white;
+        left: 220px;
+    }
+
+    div.second-link:hover{
+        transition: all 0.3s ease;
+        background: rgb(61, 61, 61);
+        color: #6001d0;
+        left: 310px;
+        text-shadow: 1px 1px 1.5px white;
+    }
+
+</style>
+
+<body link="red" link="green" vlink="blue" text="black">
+
+    <div class="message">
+        <div class="atent"></div>
+        <span class="exit-m" onclick="this.parentElement.style.display='none';">&times;</span>
+    </div>
+
+    <div class="title"></div>
+
+    <a style="color: gray;" target="_blank" href="https://www.google.com.ua">
+        <div class="first-link"></div>
+    </a>
+
+    <a style="color: gray;" target="_blank" href="https://www.yahoo.com">
+        <div class="second-link"></div>
+    </a>
+</body>
+</html>

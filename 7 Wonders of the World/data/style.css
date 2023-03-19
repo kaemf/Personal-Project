@@ -1,0 +1,259 @@
+body{
+    background: linear-gradient(90deg, #ffd1d4, #ff9b9f, #480bf7);
+}
+
+div{
+    position: absolute;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: line-through;
+}
+
+div.title{
+    left: 20%;
+    top: -15px;
+    background: white;
+    width: 60%;
+    height: 150px;
+    border-radius: 20px;
+    font-size: 80px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    box-shadow: 0px 2px 10px 0.5px black;
+}
+
+div.title::before{
+    position: absolute;
+    content: "7 ЧУДЕС УКРАЇНИ";
+    left: 20%;
+    top: 20%;
+}
+
+div.first-content{
+    background: white;
+    width: 60%;
+    height: 450px;
+    left: 20%;
+    top: 200px;
+    border-radius: 20px;
+    font-size: xx-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    box-shadow: 0px 2px 10px 0.5px black;
+}
+
+img.first-content{
+    position: absolute;
+    left: 3%;
+    top: 18%;
+    width: 28%;
+    border-radius: 10px;
+}
+
+div.second-content{
+    background: white;
+    width: 60%;
+    height: 450px;
+    left: 20%;
+    top: 725px;
+    border-radius: 20px;
+    font-size: xx-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    box-shadow: 0px 2px 10px 0.5px black;
+}
+
+div.third-content{
+    background: white;
+    width: 60%;
+    height: 450px;
+    left: 20%;
+    top: 1250px;
+    border-radius: 20px;
+    font-size: xx-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    box-shadow: 0px 2px 10px 0.5px black;
+}
+
+div.fourth-content{
+    background: white;
+    width: 60%;
+    height: 450px;
+    left: 20%;
+    top: 1775px;
+    border-radius: 20px;
+    font-size: xx-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    box-shadow: 0px 2px 10px 0.5px black;
+}
+
+div.fiveth-content{
+    background: white;
+    width: 60%;
+    height: 450px;
+    left: 20%;
+    top: 2300px;
+    border-radius: 20px;
+    font-size: xx-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    box-shadow: 0px 2px 10px 0.5px black;
+}
+
+div.sixth-content{
+    background: white;
+    width: 60%;
+    height: 450px;
+    left: 20%;
+    top: 2825px;
+    border-radius: 20px;
+    font-size: xx-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    box-shadow: 0px 2px 10px 0.5px black;
+}
+
+div.seventh-content{
+    background: white;
+    width: 60%;
+    height: 450px;
+    left: 20%;
+    top: 3350px;
+    border-radius: 20px;
+    font-size: xx-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    box-shadow: 0px 2px 10px 0.5px black;
+}
+
+div.end{
+    background: white;
+    width: 60%;
+    height: 80px;
+    left: 20%;
+    top: 3875px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    font-size: xx-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    box-shadow: 0px 2px 10px 0.5px black;
+}
+
+div.end::before{
+    position: absolute;
+    font-size: 20px;
+    top: 40%;
+    left: 8%;
+    content: "Yaroslav";
+}
+
+div.end::after{
+    position: absolute;
+    font-size: 20px;
+    top: 40%;
+    left: 90%;
+    content: "2022";
+}
+
+img.first-anim:hover{
+    transition: all 0.4s ease-in-out;
+    width: 29%;
+    z-index: 1;
+    left: 2.5%;
+    top: 18%;
+}
+
+img.second-anim:hover{
+    transition: all 0.4s ease-in-out;
+    width: 29%;
+    z-index: 1;
+    left: 2.5%;
+    top: 18%;
+}
+
+img.third-anim{ width: 50%; }
+img.third-anim:hover{
+    position: inherit;
+    transition: all 0.4s ease-in-out;
+    width: 52%;
+    z-index: 1;
+    left: 2%;
+    top: 18%;
+}
+
+img.fourth-anim{ width: 45%; }
+img.fourth-anim:hover{
+    transition: all 0.4s ease-in-out;
+    width: 47%;
+    top: 18%;
+    left: 2%;
+    z-index: 1;
+}
+
+img.fiveth-anim{ width: 45%; }
+img.fiveth-anim:hover{
+    transition: all 0.4s ease-in-out;
+    width: 47%;
+    top: 18%;
+    left: 2%;
+    z-index: 1;
+}
+
+img.sixth-anim{ width: 45%; }
+img.sixth-anim:hover{
+    transition: all 0.4s ease-in-out;
+    width: 47%;
+    top: 18%;
+    left: 2%;
+    z-index: 1;
+}
+
+img.seventh-anim{ width: 60% }
+img.seventh-anim:hover{
+    transition: all 0.4s ease-in-out;
+    width: 62%;
+    top: 18%;
+    left: 2%;
+    z-index: 1;
+}
+
+img.first-anim:active{
+    transition: all 1s ease-in-out;
+    width: 50%;
+    top: -15%;
+}
+
+img.second-anim:active{
+    transition: all 1s ease-in-out;
+    width: 50%;
+    top: -15%;
+}
+
+img.third-anim:active{
+    transition: all 1s ease-in-out;
+    width: 75%;
+    top: 0%;
+}
+
+img.fourth-anim:active{
+    transition: all 1s ease-in-out;
+    width: 68%;
+    top: -5%;
+}
+
+img.fiveth-anim:active{
+    transition: all 1s ease-in-out;
+    width: 75%;
+    top: 5%;
+}
+
+img.sixth-anim:active{
+    transition: all 1s ease-in-out;
+    width: 74%;
+    top: 0.03%;
+}
+
+img.seventh-anim:active{
+    transition: all 1s ease-in-out;
+    width: 93%;
+    top: 0.03%;
+}
