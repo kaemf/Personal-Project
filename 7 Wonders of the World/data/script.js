@@ -1,4 +1,4 @@
-var img = document.querySelectorAll('.img'), mod = document.getElementById('modale-img'), overlay = document.getElementById('overlay'), closeButton = document.getElementById('closeButton');
+var img = document.querySelectorAll('.img'), modalIm = document.getElementById('modal-img'), overlay = document.getElementById('overlay'), modal = document.getElementById('modal'), closeButton = document.getElementById('closeButton');
 var active = false, hovered = false, double = false, ndouble = false;
 img.forEach(function (img) {
     img.addEventListener('click', function (event) {
@@ -10,19 +10,25 @@ img.forEach(function (img) {
         //     ndouble = true;
         // }
         if (!active) {
-            overlay.style.display = 'flex';
-            mod.src = currImg.src;
+            overlay.style.visibility = 'visible';
+            overlay.style.opacity = '1';
+            overlay.style.width = '100%';
+            overlay.style.height = '100%';
+            modal.style.transform = 'scale(1)';
+            modalIm.src = currImg.src;
+            active = true;
+            document.body.style.overflow = 'hidden';
         }
-        else if (active && ndouble && !double) {
-            img.style.transform = 'scale(2.3)';
-            ndouble = false;
-            double = true;
-        }
-        else if (active && double && !ndouble) {
-            img.style.transform = 'scale(2)';
-            double = false;
-            ndouble = true;
-        }
+        // else if (active && ndouble && !double){
+        //     img.style.transform = 'scale(2.3)';
+        //     ndouble = false;
+        //     double = true;
+        // }
+        // else if (active && double && !ndouble){
+        //     img.style.transform = 'scale(2)';
+        //     double = false;
+        //     ndouble = true;
+        // }
     });
     img.addEventListener('mouseover', function (event) {
         if (!active && !hovered) {
@@ -38,18 +44,22 @@ img.forEach(function (img) {
     });
 });
 document.addEventListener('click', function (event) {
-    var isClicked = Array.prototype.slice.call(img).some(function (img) { return img.contains(event.target); });
-    if (!isClicked && active) {
-        img.forEach(function (img) {
-            img.style.transform = 'scale(1)';
-            img.style.zIndex = '1';
-        });
+    var isClickedIm = Array.prototype.slice.call(img).some(function (img) { return img.contains(event.target); });
+    var isClicked = modal.contains(event.target);
+    if (!isClickedIm && !isClicked && active) {
+        overlay.style.visibility = 'hidden';
+        overlay.style.opacity = '0';
+        modal.style.transform = 'scale(0)';
+        document.body.style.overflow = 'auto';
         active = false;
         hovered = false;
         ndouble = false;
         double = false;
     }
 });
-closeButton.addEventListener('click', function () {
-    overlay.style.display = 'none';
+modalIm.addEventListener('click', function (event) {
+    if (active && !double && ndouble) {
+    }
+    if (active && double && !ndouble) {
+    }
 });

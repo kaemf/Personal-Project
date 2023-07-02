@@ -122,10 +122,10 @@ img{
 }
 
 .author::before{
-    content: "Мельниченко Вікторія Олегівна, 11 клас";
+    content: "Junior Fullstack Developer YAROSLAV VOLKIVSKYI";
 }
 .date::before{
-    content: "2022";
+    content: "2023";
 }
 
 #overlay{
@@ -134,16 +134,21 @@ img{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Прозрачный затемненный фон */
-    display: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    visibility: hidden;
+    display: flex;
     justify-content: center;
     align-items: center;
+    transition: all .3s ease;
+    opacity: 0;
 }
   
 #modal{
+    transition: all .3s ease;
+    transform: scale(0);
     background-color: #fff;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
   
