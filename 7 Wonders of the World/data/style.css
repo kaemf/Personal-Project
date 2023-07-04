@@ -125,7 +125,7 @@ img{
     content: "Junior Fullstack Developer YAROSLAV VOLKIVSKYI";
 }
 .date::before{
-    content: "2023";
+    content: attr(year);
 }
 
 #overlay{
@@ -145,14 +145,23 @@ img{
   
 #modal{
     transition: all .3s ease;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     transform: scale(0);
     background-color: #fff;
     padding: 20px;
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
-  
-#closeButton{
-    margin-top: 10px;
+
+#modal-img{
+    transition: all .3s ease;
+    width: 100%;
+    cursor: zoom-in;
 }
-  
+
+#modal h2{
+    text-align: center;
+    margin-top: 0;
+}
